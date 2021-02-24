@@ -50,7 +50,7 @@ To get a local copy up and running follow these simple steps.
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/Paul-Clue/micro-reddit/issues).
+Feel free to check the [issues page](https://github.com/oxenprogrammer/basic-form/issues).
 
 ## Show your support
 
