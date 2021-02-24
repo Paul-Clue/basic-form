@@ -1,7 +1,7 @@
 <h1>User Page</h1>
 
 <%# <form action="/users" method="post" accept-charset="UTF-8"> %>
-  <%# <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>"> %>
+  <%# <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>
   <%# <label for="name">Name:</label> %>
   <%# <input type="text" id="user[username]" name="user[username]"><br><br> %>
   <%# <label for="email">Email:</label> %>
@@ -10,3 +10,16 @@
   <%# <input type="password" id="user[password]" name="user[password]"><br><br> %>
   <%# <input type="submit" value="Submit"> %>
 <%# </form> %>
+
+<%= form_tag("/users", method: :post) do %>
+  <%= label_tag(:username, "Name:") %>
+  <%= text_field_tag(:username) %>
+  <br><br>
+  <%= label_tag(:email, "Email:") %>
+  <%= email_field_tag 'email', 'email@example.com' %>
+  <br><br>
+  <%= label_tag(:password, "Password:") %>
+  <%= password_field_tag 'password' %>
+  <br><br>
+  <%= submit_tag("Submit") %>
+<% end %>
