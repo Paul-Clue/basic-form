@@ -1,12 +1,12 @@
 <h1>User Page</h1>
 
 <form action="/users" method="post" accept-charset="UTF-8">
+  <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
   <label for="name">Name:</label>
   <input type="text" id="user[username]" name="user[username]"><br><br>
   <label for="email">Email:</label>
-  <input type="text" id="user[email]" name="user[email]"><br><br>
-  <label for="pwd">Password:</label>
+  <input type="email" id="user[email]" name="user[email]"><br><br>
+  <label for="password">Password:</label>
   <input type="password" id="user[password]" name="user[password]"><br><br>
-  <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
   <input type="submit" value="Submit">
 </form>
