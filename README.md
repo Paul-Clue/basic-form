@@ -27,6 +27,9 @@ To get a local copy up and running follow these simple steps.
 
 ### Usage
 
+
+- Create users using rails commands.
+- run `rails db:migrate` to add users to database.
 - To test the Models run `rails c`.
 - GO to your browser and paste this address: http://127.0.0.1:3000/.
 - Fill out the form and then submit.
