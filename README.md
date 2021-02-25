@@ -22,8 +22,11 @@ To get a local copy up and running follow these simple steps.
 
 - Clone this repository using the link above (click on the 'code' button).
 - Open a terminal and `cd` to the cloned repository.
+- Run `yarn` to install other dependencies.
 - Run `bundle install` to install the dependencies.
+- Run `db:create` to create the database
 - Run `bin/rails db:migrate` to migrate the database.
+- Run the server using `rails s`
 
 ### Usage
 
